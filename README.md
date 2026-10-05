@@ -1,6 +1,6 @@
 # T&S apart-hotel
 
-Live site: https://tsapart.chernivtsi.space
+Live site: https://tsapart.hotelup.work
 
 ## About
 T&S apart-hotel — апарт-готель у Чернівцях. Односторінковий лендинг. Фото закладу немає (`photos_source: null`), тому hero типографічний (CSS/SVG), а єдині фото — міста Чернівців з Pexels (див. Photos).
