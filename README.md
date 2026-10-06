@@ -59,18 +59,27 @@ Booking.com listing text (description, rooms, breakfast, house rules; guest revi
 - [ ] TODO: отримати перелік обладнання кухні та площу апартаментів
 - [ ] TODO: уточнити тип роз’єму й вартість EV-зарядки, умови трансферу (платний?)
 - [ ] TODO: уточнити кількість номерів (24/25/26)
-- [ ] TODO: отримати власні фото закладу (фасад, рецепція, номери, ванні) і погодити їх використання — потім додати галерею
+- [ ] TODO: фото номерів додано (реальні, з офіційного сайту); фасад/рецепцію/ванні кімнати все ще потрібно отримати від готелю й погодити використання
 - [ ] TODO: перевірити ціни й наявність через сам готель; на сторінці цін немає
 
 ## Forms
 HotelOS (`ch-tsapart`): `stay-request` (проживання), `conference-request` (Запит на конференц-зал). Документ `hotels/ch-tsapart` у Firestore треба створити вручну, інакше правила відхилять заявки.
 
 ## Photos
-Лише фото міста (не готелю), з Pexels, підключені за прямими посиланнями images.pexels.com (без копій у репо), з підписами та авторами на сторінці:
+Фото міста (не готелю), з Pexels, підключені за прямими посиланнями images.pexels.com (без копій у репо), з підписами та авторами на сторінці:
 
 - Арочні вікна старої будівлі: pexels.com/photo/38163648 (Natalia Sevruk)
 - Резиденція буковинських митрополитів, нині Чернівецький університет: pexels.com/photo/39176014 (Tetiana Boriskova)
 - Чернівецький дворик: pexels.com/photo/17265321 (Андрій Копічевський)
+
+Реальні фото номерів (квадратні, 800×800, локальні копії в `images/rooms/`), завантажені з офіційного сайту tshotels.com.ua — кожна сторінка номера підтверджена назвою й місткістю, що збігаються з даними на цьому сайті:
+
+| Номер | Файл | Джерело |
+|---|---|---|
+| Стандарт | `images/rooms/standart.jpg` | tshotels.com.ua/nomeri/20/ |
+| Сімейний | `images/rooms/simeyniy.jpg` | tshotels.com.ua/nomeri/21/ |
+| Стандарт з кухнею | `images/rooms/standart-kitchen.jpg` | tshotels.com.ua/nomeri/22/ |
+| Люкс з кухнею | `images/rooms/lux-kitchen.jpg` | tshotels.com.ua/nomeri/24/ |
 
 ## SEO
 Title і description з маніфесту, canonical, Open Graph, `geo.*`, JSON-LD `Hotel` лише з підтвердженими полями (без numberOfRooms, starRating, aggregateRating), `robots.txt`, `sitemap.xml`, `404.html`.
